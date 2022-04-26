@@ -22,128 +22,127 @@ body:
       label: Issue Priority
       description: What priority is this bug?
       options:
-        - Priority: 0
-        - Priority: 1
-        - Priority: 2
-        - Priority: 3
-        - Priority: 4
+        - "Priority: 0"
+        - "Priority: 1"
+        - "Priority: 2"
+        - "Priority: 3"
+        - "Priority: 4"
     validations:
       required: true
   - type: dropdown
     id: component
     attributes:
-      label: Issue component
       options:
-      - beam-community
-      - beam-model
-      - beam-playground
-      - benchmarking-py
-      - build-system
-      - community-metrics
-      - cross-language
-      - dependencies
-      - dsl-dataframe
-      - dsl-euphoria
-      - dsl-sql
-      - dsl-sql-zetasql
-      - examples-java
-      - examples-python
-      - extensions-ideas
-      - extensions-java-gcp
-      - extensions-java-join-library
-      - extensions-java-json
-      - extensions-java-kyro
-      - extensions-java-protobuf
-      - extensions-java-sketching
-      - extensions-java-sorter
-      - gcp-quota
-      - infrastructure
-      - io-common
-      - io-go-gcp
-      - io-ideas
-      - io-java-amqp
-      - io-java-avro
-      - io-java-aws
-      - io-java-azure
-      - io-java-cassandra
-      - io-java-cdap
-      - io-java-clickhouse
-      - io-java-debezium
-      - io-java-elasticsearch
-      - io-java-files
-      - io-java-gcp
-      - io-java-hadoop-file-system
-      - io-java-hadoop-format
-      - io-java-hbase
-      - io-java-hcatalog
-      - io-java-healthcare
-      - io-java-influxdb
-      - io-java-jdbc
-      - io-java-jms
-      - io-java-kafka
-      - io-java-kinesis
-      - io-java-kudu
-      - io-java-mongodb
-      - io-java-mqtt
-      - io-java-parquet
-      - io-java-pulsar
-      - io-java-rabbitmq
-      - io-java-redis
-      - io-java-snowflake
-      - io-java-solr
-      - io-java-splunk
-      - io-java-text
-      - io-java-tfrecord
-      - io-java-tika
-      - io-java-utilities
-      - io-java-xml
-      - io-py-avro
-      - io-py-aws
-      - io-py-common
-      - io-py-files
-      - io-py-gcp
-      - io-py-hadoop
-      - io-py-ideas
-      - io-py-kafka
-      - io-py-mongodb
-      - io-py-parquet
-      - io-py-tfrecord
-      - io-py-vcf
-      - java-fn-execution
-      - jobserver
-      - katas
-      - project-management
-      - release
-      - runner-apex
-      - runner-core
-      - runner-dataflow
-      - runner-direct
-      - runner-extensions-metrics
-      - runner-flink
-      - runner-gearpump
-      - runner-ideas
-      - runner-jet
-      - runner-jstorm
-      - runner-mapreduce
-      - runner-py-direct
-      - runner-py-interactive
-      - runner-ray
-      - runner-samza
-      - runner-spark
-      - runner-tez
-      - runner-twister2
-      - runner-universal
-      - sdk-go
-      - sdk-ideas
-      - sdk-java-core
-      - sdk-java-harness
-      - sdk-py-core
-      - sdk-py-harness
-      - sdk-typescript
-      - test-failures
-      - testing
-      - testing-nexmark
-      - testing-tpcds
-      - website
+      - "Component: beam-community"
+      - "Component: beam-model"
+      - "Component: beam-playground"
+      - "Component: benchmarking-py"
+      - "Component: build-system"
+      - "Component: community-metrics"
+      - "Component: cross-language"
+      - "Component: dependencies"
+      - "Component: dsl-dataframe"
+      - "Component: dsl-euphoria"
+      - "Component: dsl-sql"
+      - "Component: dsl-sql-zetasql"
+      - "Component: examples-java"
+      - "Component: examples-python"
+      - "Component: extensions-ideas"
+      - "Component: extensions-java-gcp"
+      - "Component: extensions-java-join-library"
+      - "Component: extensions-java-json"
+      - "Component: extensions-java-kyro"
+      - "Component: extensions-java-protobuf"
+      - "Component: extensions-java-sketching"
+      - "Component: extensions-java-sorter"
+      - "Component: gcp-quota"
+      - "Component: infrastructure"
+      - "Component: io-common"
+      - "Component: io-go-gcp"
+      - "Component: io-ideas"
+      - "Component: io-java-amqp"
+      - "Component: io-java-avro"
+      - "Component: io-java-aws"
+      - "Component: io-java-azure"
+      - "Component: io-java-cassandra"
+      - "Component: io-java-cdap"
+      - "Component: io-java-clickhouse"
+      - "Component: io-java-debezium"
+      - "Component: io-java-elasticsearch"
+      - "Component: io-java-files"
+      - "Component: io-java-gcp"
+      - "Component: io-java-hadoop-file-system"
+      - "Component: io-java-hadoop-format"
+      - "Component: io-java-hbase"
+      - "Component: io-java-hcatalog"
+      - "Component: io-java-healthcare"
+      - "Component: io-java-influxdb"
+      - "Component: io-java-jdbc"
+      - "Component: io-java-jms"
+      - "Component: io-java-kafka"
+      - "Component: io-java-kinesis"
+      - "Component: io-java-kudu"
+      - "Component: io-java-mongodb"
+      - "Component: io-java-mqtt"
+      - "Component: io-java-parquet"
+      - "Component: io-java-pulsar"
+      - "Component: io-java-rabbitmq"
+      - "Component: io-java-redis"
+      - "Component: io-java-snowflake"
+      - "Component: io-java-solr"
+      - "Component: io-java-splunk"
+      - "Component: io-java-text"
+      - "Component: io-java-tfrecord"
+      - "Component: io-java-tika"
+      - "Component: io-java-utilities"
+      - "Component: io-java-xml"
+      - "Component: io-py-avro"
+      - "Component: io-py-aws"
+      - "Component: io-py-common"
+      - "Component: io-py-files"
+      - "Component: io-py-gcp"
+      - "Component: io-py-hadoop"
+      - "Component: io-py-ideas"
+      - "Component: io-py-kafka"
+      - "Component: io-py-mongodb"
+      - "Component: io-py-parquet"
+      - "Component: io-py-tfrecord"
+      - "Component: io-py-vcf"
+      - "Component: java-fn-execution"
+      - "Component: jobserver"
+      - "Component: katas"
+      - "Component: project-management"
+      - "Component: release"
+      - "Component: runner-apex"
+      - "Component: runner-core"
+      - "Component: runner-dataflow"
+      - "Component: runner-direct"
+      - "Component: runner-extensions-metrics"
+      - "Component: runner-flink"
+      - "Component: runner-gearpump"
+      - "Component: runner-ideas"
+      - "Component: runner-jet"
+      - "Component: runner-jstorm"
+      - "Component: runner-mapreduce"
+      - "Component: runner-py-direct"
+      - "Component: runner-py-interactive"
+      - "Component: runner-ray"
+      - "Component: runner-samza"
+      - "Component: runner-spark"
+      - "Component: runner-tez"
+      - "Component: runner-twister2"
+      - "Component: runner-universal"
+      - "Component: sdk-go"
+      - "Component: sdk-ideas"
+      - "Component: sdk-java-core"
+      - "Component: sdk-java-harness"
+      - "Component: sdk-py-core"
+      - "Component: sdk-py-harness"
+      - "Component: sdk-typescript"
+      - "Component: test-failures"
+      - "Component: testing"
+      - "Component: testing-nexmark"
+      - "Component: testing-tpcds"
+      - "Component: website"
     validations:
       required: true
