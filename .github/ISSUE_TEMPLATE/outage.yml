@@ -1,0 +1,156 @@
+name: Outage
+description: File an outage
+title: "[Outage]: "
+labels: ["outage", "awaiting triage"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Please describe your issue
+    validations:
+      required: true
+  - type: textarea
+    id: what-impact
+    attributes:
+      label: What is the impact of this outage?
+      description: Please describe effected components
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Issue Priority
+      description: What priority is this outage?
+      options:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+    validations:
+      required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: Issue component
+      options:
+      - beam-community
+      - beam-model
+      - beam-playground
+      - benchmarking-py
+      - build-system
+      - community-metrics
+      - cross-language
+      - dependencies
+      - dsl-dataframe
+      - dsl-euphoria
+      - dsl-sql
+      - dsl-sql-zetasql
+      - examples-java
+      - examples-python
+      - extensions-ideas
+      - extensions-java-gcp
+      - extensions-java-join-library
+      - extensions-java-json
+      - extensions-java-kyro
+      - extensions-java-protobuf
+      - extensions-java-sketching
+      - extensions-java-sorter
+      - gcp-quota
+      - infrastructure
+      - io-common
+      - io-go-gcp
+      - io-ideas
+      - io-java-amqp
+      - io-java-avro
+      - io-java-aws
+      - io-java-azure
+      - io-java-cassandra
+      - io-java-cdap
+      - io-java-clickhouse
+      - io-java-debezium
+      - io-java-elasticsearch
+      - io-java-files
+      - io-java-gcp
+      - io-java-hadoop-file-system
+      - io-java-hadoop-format
+      - io-java-hbase
+      - io-java-hcatalog
+      - io-java-healthcare
+      - io-java-influxdb
+      - io-java-jdbc
+      - io-java-jms
+      - io-java-kafka
+      - io-java-kinesis
+      - io-java-kudu
+      - io-java-mongodb
+      - io-java-mqtt
+      - io-java-parquet
+      - io-java-pulsar
+      - io-java-rabbitmq
+      - io-java-redis
+      - io-java-snowflake
+      - io-java-solr
+      - io-java-splunk
+      - io-java-text
+      - io-java-tfrecord
+      - io-java-tika
+      - io-java-utilities
+      - io-java-xml
+      - io-py-avro
+      - io-py-aws
+      - io-py-common
+      - io-py-files
+      - io-py-gcp
+      - io-py-hadoop
+      - io-py-ideas
+      - io-py-kafka
+      - io-py-mongodb
+      - io-py-parquet
+      - io-py-tfrecord
+      - io-py-vcf
+      - java-fn-execution
+      - jobserver
+      - katas
+      - project-management
+      - release
+      - runner-apex
+      - runner-core
+      - runner-dataflow
+      - runner-direct
+      - runner-extensions-metrics
+      - runner-flink
+      - runner-gearpump
+      - runner-ideas
+      - runner-jet
+      - runner-jstorm
+      - runner-mapreduce
+      - runner-py-direct
+      - runner-py-interactive
+      - runner-ray
+      - runner-samza
+      - runner-spark
+      - runner-tez
+      - runner-twister2
+      - runner-universal
+      - sdk-go
+      - sdk-ideas
+      - sdk-java-core
+      - sdk-java-harness
+      - sdk-py-core
+      - sdk-py-harness
+      - sdk-typescript
+      - test-failures
+      - testing
+      - testing-nexmark
+      - testing-tpcds
+      - website
+    validations:
+      required: true
