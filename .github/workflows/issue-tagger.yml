@@ -1,5 +1,7 @@
 name: IssueTagger
-on: [issues]
+on:
+  issues:
+    types: [opened]
 
 jobs:
   label:
