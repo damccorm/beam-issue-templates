@@ -14,6 +14,10 @@ body:
     attributes:
       label: What happened?
       description: Please describe your issue
+      placeholder: |
+          Please include steps to reproduce your issue.
+          If you have a question or need support that is not caused by a bug (or you're not sure if it is), please send an
+          email to user@apache.beam.com
     validations:
       required: true
   - type: dropdown
