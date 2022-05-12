@@ -17,7 +17,7 @@ body:
       placeholder: |
           Please include steps to reproduce your issue.
 
-          If you have a question or need help with an issue that you aren't sure is a bug, please send an email to user@apache.beam.com
+          If this is a question or support request (not a bug), please email user@apache.beam.com with a description of the problem instead of opening this issue.
     validations:
       required: true
   - type: dropdown
