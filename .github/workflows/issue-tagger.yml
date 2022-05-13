@@ -10,7 +10,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - uses: damccorm/tag-ur-it@master
+    - uses: damccorm/tag-ur-it@6fa72bbf1a2ea157b533d7e7abeafdb5855dbea5
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         configuration-path: "./.github/issue-rules.yml"
